@@ -46,8 +46,8 @@ const HistoryPanel: FC<Props> = ({
         <div className='flex justify-between py-2 px-3 rounded-b-xl bg-background-section-burn text-xs text-text-secondary'>
           <div>{t('appDebug.feature.conversationHistory.tip')}
             <a href={`${locale === LanguagesSupported[1]
-              ? 'https://docs.dify.ai/v/zh-hans/guides/application-design/prompt-engineering'
-              : 'https://docs.dify.ai/features/prompt-engineering'}`}
+              ? 'https://docs.openai.com/v/zh-hans/guides/application-design/prompt-engineering'
+              : 'https://docs.openai.com/features/prompt-engineering'}`}
             target='_blank' rel='noopener noreferrer'
             className='text-[#155EEF]'>{t('appDebug.feature.conversationHistory.learnMore')}
             </a>

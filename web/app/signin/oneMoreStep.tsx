@@ -13,7 +13,7 @@ import { LanguagesSupported, languages } from '@/i18n/language'
 import { oneMoreStep } from '@/service/common'
 import Toast from '@/app/components/base/toast'
 
-interface IState {
+type IState = {
   formState: 'processing' | 'error' | 'success' | 'initial'
   invitation_code: string
   interface_language: string
@@ -157,7 +157,7 @@ const OneMoreStep = () => {
             <Link
               className='system-xs-medium text-text-accent-secondary'
               target='_blank' rel='noopener noreferrer'
-              href={'https://docs.dify.ai/user-agreement/open-source'}
+              href={'https://docs.openai.com/user-agreement/open-source'}
             >{t('login.license.link')}</Link>
           </div>
         </div>

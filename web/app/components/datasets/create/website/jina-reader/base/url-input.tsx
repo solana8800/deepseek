@@ -7,7 +7,7 @@ import Button from '@/app/components/base/button'
 
 const I18N_PREFIX = 'datasetCreation.stepOne.website'
 
-interface Props {
+type Props = {
   isRunning: boolean
   onRun: (url: string) => void
 }
@@ -32,7 +32,7 @@ const UrlInput: FC<Props> = ({
       <Input
         value={url}
         onChange={handleUrlChange}
-        placeholder='https://docs.dify.ai'
+        placeholder='https://docs.openai.com'
       />
       <Button
         variant='primary'
